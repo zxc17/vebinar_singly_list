@@ -20,12 +20,12 @@ public class SinglyLinkedList<T> {
 
 	public static void main(String[] args) {
 		SinglyLinkedList<String> list = new SinglyLinkedList<>();
-		list.add("A");
-		list.add("B");
-		list.add("C");
-		boolean result = list.remove("A");
+//		list.add("A");
+//		list.add("B");
+//		list.add("C");
+//		boolean result = list.remove("A");
 //		boolean result = list.remove("B");
-//		boolean result = list.remove("C");
+		boolean result = list.remove("C");
 		list.print();
 		// A C
 	}
@@ -43,9 +43,9 @@ public class SinglyLinkedList<T> {
 	}
 
 	private boolean remove(T value) { // O(n)
-		if (head == null) {
-			return false;
-		}
+//		if (head == null) {
+//			return false;
+//		}
 		Node<T> current = head;
 		Node<T> prev = null;
 		do {
